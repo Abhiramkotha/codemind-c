@@ -1,0 +1,31 @@
+ #include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,r,count=0,r1,a,sum=0,d,sq;
+    scanf("%d",&n);
+    d=n;
+    while(n>0)
+    {
+        r=n%10;
+        count++;
+        n=n/10;
+    }
+    a=d;
+    while(d>0)
+    {
+        r1=d%10;
+        sq=pow(r1,count);
+        sum+=sq;
+        count--;
+        d=d/10;
+    }
+    if(sum==a)
+    {
+        printf("True");
+    }
+    else
+    {
+              printf("False");
+    }
+}
