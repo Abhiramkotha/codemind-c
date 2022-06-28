@@ -1,20 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,a[100],i,j,c=0,f=0,k;
-    float sum,avg;
+    int a[100],n,c=0,r,m,sum=0,f;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
-    scanf("%d",&k);
-    for(i=0;i<n;i++)
-    {
-        f=0;
-        for(j=1;j<=a[i];j++)
+    scanf("%d",&m);
+    for(int i=0;i<n;i++)
+    {f=0;
+        for(int j=1;j<=a[i];j++)
         {
-            
             if(a[i]%j==0)
             {
                 f++;
@@ -22,12 +19,9 @@ int main()
         }
         if(f==2)
         {
-            if(a[i]<=k)
-            {
-                c++;
-            }
+           if(a[i]<=m)
+           c++;
         }
     }
     printf("%d",c);
-   
 }
