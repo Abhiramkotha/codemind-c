@@ -1,28 +1,26 @@
- #include<stdio.h>
+#include<stdio.h>
 int main()
 {
-    int i,n,arr[2000],j,fact=0,count=0;
+    int a[100],n,c=0,r,m,sum=0,f;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&a[i]);
     }
-    for(i=0;i<n;i++)
-    {
-        fact=0;
-        for(j=1;j<=arr[i];j++)
+    scanf("%d",&m);
+    for(int i=0;i<n;i++)
+    {f=0;
+        for(int j=1;j<=a[i];j++)
         {
-            if(arr[i]%j==0)
+            if(a[i]%j==0)
             {
-                fact++;
+                f++;
             }
         }
-        if(fact==2)
+        if(f==2)
         {
-            count++;
+           c++;
         }
     }
-    printf("%d",count);
-    return 0;
-    
+    printf("%d",c);
 }
