@@ -1,24 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,n,arr[100],i,sum=0,c=0;
+    int n,a,b,ar[100],sum=0;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-         scanf("%d",&arr[i]);
+        scanf("%d",&ar[i]);
     }
     scanf("%d%d",&a,&b);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-        if(arr[i]>=a && arr[i]<=b)
+        if(ar[i]>=a&&ar[i]<=b)
         {
-            printf("%d ",arr[i]);
-            c++;
+          printf("%d ",ar[i]);
+          sum++;
         }
     }
-    if(c==0)
-    {
-        printf("-1");
-    }
-   
+    if(sum==0)
+    printf("-1");
 }
