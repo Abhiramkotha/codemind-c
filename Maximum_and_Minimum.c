@@ -1,4 +1,4 @@
- #include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int n,a[100],f=0,max=0,min=999;
