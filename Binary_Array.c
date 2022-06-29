@@ -1,21 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a[100],i,n,c=0;
+    int n,ar[100],f=0;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&ar[i]);
+        if(ar[i]==0||ar[i]==1)
+        f++;
         
     }
-    for(i=0;i<n;i++)
-    {
-        if(a[i]==0 || a[i]==1)
-        {
-            c++;
-        }
-    }
-    if(c==n)
+    if(f==n)
     printf("True");
     else
     printf("False");
