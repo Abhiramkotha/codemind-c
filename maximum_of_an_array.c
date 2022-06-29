@@ -1,19 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,arr[100],max=0;
+    int ar[100],min,n;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&ar[i]);
     }
-    max=arr[0];
-    for(i=0;i<n;i++)
+    min=ar[0];
+    for(int i=0;i<n;i++)
     {
-        if(max<arr[i])
-        {
-            max=arr[i];
-        }
+        if(ar[i]>min)
+        min=ar[i];
     }
-    printf("%d",max);
+    printf("%d",min);
 }
