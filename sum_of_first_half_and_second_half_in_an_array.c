@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 int main()
 {
     int ar[100],n,k,sum=0,s=0;
